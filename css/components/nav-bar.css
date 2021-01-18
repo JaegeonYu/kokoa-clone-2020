@@ -1,0 +1,73 @@
+.nav {
+  background-color: #f9f9fa;
+  padding: 20px 40px;
+  border-top: 1px solid rgba(0, 0, 0, 0.5);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+}
+.nav__link {
+  color: #2e363e;
+  position: relative;
+}
+.nav__notification {
+  background-color: tomato;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 600;
+  position: absolute;
+  left: 15px;
+  top: -15px;
+  animation: notificationAnimaition 1s ease-in-out infinite;
+}
+@keyframes notificationAnimaition {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: translateY(-5px) rotateY(360deg);
+  }
+  100% {
+    transform: none;
+  }
+}
+.nav__dot {
+  background-color: tomato;
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  border-radius: 3px;
+  left: 25px;
+}
+@keyframes appearBtnAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+.nav_button {
+  transform: translateY(50px);
+  animation: appearBtnAnimation 1s ease-in-out forwards;
+}
+.nav_button:nth-child(2) {
+  animation-delay: 0.5s;
+}
+.nav_button:nth-child(3) {
+  animation-delay: 1s;
+}
+.nav_button:last-child {
+  animation-delay: 1.5s;
+}

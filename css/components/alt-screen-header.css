@@ -1,0 +1,30 @@
+.alt-screen-header {
+  display: flex;
+  width: 100%;
+  padding: var(--horizontal);
+  box-sizing: border-box;
+  align-items: center;
+  position: fixed;
+  top: 10px;
+  background-color: #abc1d1;
+  z-index: 2;
+}
+
+.alt-header__column {
+  width: 33%;
+}
+.alt-header__column:nth-child(2) {
+  display: flex;
+  justify-content: center;
+}
+.alt-header__column:last-child {
+  display: flex;
+  justify-content: flex-end;
+}
+.alt-header__column span:last-child {
+  margin-left: 15px;
+}
+.alt-header__title {
+  font-size: 28px;
+  font-weight: 600;
+}
